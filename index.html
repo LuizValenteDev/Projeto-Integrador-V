@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Saúde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Agenda</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="dicas.html">Dicas de Saúde</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Agenda de Saúde</h1>
+        <form id="health-form">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="appointments-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

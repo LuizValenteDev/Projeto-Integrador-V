@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades - Agenda de Saúde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Agenda</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="dicas.html">Dicas de Saúde</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Escolha a Especialidade</h1>
+        <form id="specialty-form">
+            <label for="specialty">Especialidade:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="pediatria">Pediatria</option>
+                <!-- Adicione mais especialidades conforme necessário -->
+            </select>
+            
+            <button type="submit">Selecionar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
